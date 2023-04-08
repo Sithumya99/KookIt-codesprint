@@ -1,0 +1,304 @@
+@import url(root.css);
+
+main{
+    height: fit-content;
+    background: url(assets/bg-img.png) no-repeat center;
+    background-size: cover;
+}
+.navbar{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    box-shadow: 0rem .3rem .2rem gray;
+}
+.circle{
+    height: clamp(1.3rem, 3vw, 4rem);
+    width: clamp(1.3rem, 3vw, 4rem);
+    background-color: var(--color-purple);
+    border-radius: 50%;
+}
+.navbar img{
+    height: 2rem;
+    width: 7rem;
+}
+.login{
+    border: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-yellow);
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border-radius: .9rem;
+}
+.hero-section{
+    height: 100dvh;
+    padding-block: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slogan{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    top: 1rem;
+    margin-inline: .2rem;
+}
+.small-logan{
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    color: var(--color-yellow);
+    font-weight: 600;
+    margin-top: .5rem;
+    text-align: center;
+}
+.click-to-begin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.start{
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.click-to-begin img{
+    width: 2.5rem;
+    height: 5rem;
+}
+.click-to-begin p{
+    text-align: center;
+}
+.recipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circles{
+    display: flex;
+    height: clamp(1.3rem, 3vw, 4rem);
+    width: clamp(4rem, 3vw, 12rem);
+    position: relative;
+}
+.recipe{
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border: .135rem solid var(--color-yellow);
+    border-radius: .9rem;
+    margin-block: 1rem;
+}
+.recipe p{
+    margin-bottom: 0;
+    margin-inline: .5rem;
+}
+.circles div{
+    height: clamp(1.3rem, 3vw, 4rem);
+    width: clamp(1.3rem, 3vw, 4rem);
+    background-color: var(--color-purple);
+    border-radius: 50%;
+    position: absolute;
+}
+.circles div:nth-of-type(1){
+    z-index: 3;
+}
+.circles div:nth-of-type(2){
+    background-color: var(--color-yellow);
+    left: 1rem;
+    z-index: 2;
+}
+.circles div:nth-of-type(3){
+    background-color: var(--color-pink);
+    left: 2rem;
+    z-index: 1;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 1rem;
+    margin-block: 1rem;
+}
+.section1 div.text{
+    text-align: center;
+}
+.section1 div.text header{
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 800;
+    padding-block: .5rem;
+}
+.section1 img{
+    width: 14rem;
+    height: 15rem;
+    margin-block: 1rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0rem -.3rem .2rem gray;
+}
+.socials{
+    padding-block: 1rem;
+}
+.socials img{
+    height: clamp(1.3rem, 3vw, 4rem);
+    width: clamp(1.3rem, 3vw, 4rem);
+}
+#dialog-form{
+    position: absolute;
+    height: 65dvh;
+    width: 60dvw;
+    border-radius: 1rem;
+    left: 50dvw;
+    top: 40dvh;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 1rem;
+    padding-block: 1rem;
+}
+form span{
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--color-yellow);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: .7rem;
+}
+form header{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-block: .5rem;
+}
+.login-form{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form div, .signup-form div{
+    margin-block: .5rem;
+}
+.login-form input, .signup-form input{
+    width: 10rem;
+    height: 1.5rem;
+    border-radius: .5rem;
+    padding-left: .5rem;
+    padding-block: .2rem;
+}
+.login-form p, .signup-form p{
+    font-size: .7rem;
+    text-align: center;
+}
+.login-form a.login-link, .signup-form a.new-account-link{
+    text-decoration: none;
+    text-align: center;
+    padding-inline: .7rem;
+    padding-block: .4rem;
+    margin-inline: 2rem;
+    border-radius: .7rem;
+    background-color: var(--color-yellow);
+    color: black;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-block: 1rem !important;
+}
+.icons img{
+    height: clamp(1.3rem, 3vw, 4rem);
+    width: clamp(1.3rem, 3vw, 4rem);
+    margin-inline: .5rem;
+}
+.new{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sign-up-btn{
+    text-decoration: none;
+    text-align: center;
+    padding-inline: .7rem;
+    padding-block: .4rem;
+    margin-inline: 2rem;
+    border-radius: .7rem;
+    background-color: var(--color-yellow);
+    color: black;
+}
+.signup-form{
+    width: fit-content;
+    display: none;
+}
+.signup-form a.new-account-link{
+    display: flex;
+    width: 8rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.signup-form input{
+    margin-left: 1.5rem;
+}
+@media only screen and (width > 768px) {
+    #dialog-form{
+        height: 65dvh;
+        width: 50dvw;
+    }
+    .navbar img{
+        width: 14rem;
+        height: 4rem;
+    }
+    .slogan{
+        padding-inline: 4rem;
+        font-size: 6rem;
+    }
+    .section1{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: .5rem;
+    }
+    .section1 div.text{
+        text-align: right;
+        padding-left: 3.5rem;
+    }
+    .section1 img{
+        margin-left: 1.5rem;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 2rem;
+        padding-block: .5rem;
+    }
+    .login-form input, .signup-form input{
+        width: 15rem;
+        height: 2rem;
+    }
+    .signup-form a.new-account-link{
+        display: block;
+        width: auto;
+    }
+}
