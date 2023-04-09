@@ -11,7 +11,7 @@ loginBtn.addEventListener('click', openForm);
 startBtn.addEventListener('click', openForm);
 signUp.addEventListener('click', (e) => {
     loginForm.style.display = 'none';
-    signupForm.style.display = 'block';
+    signupForm.style.display = 'flex';
     e.preventDefault();
 });
 loginLink.addEventListener('click', (e) => {

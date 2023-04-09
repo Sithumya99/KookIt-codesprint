@@ -1,0 +1,152 @@
+@import url(root.css);
+
+
+.navbar{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    box-shadow: 0rem .3rem .2rem gray;
+}
+.circle{
+    height: clamp(1.3rem, 3vw, 4rem);
+    width: clamp(1.3rem, 3vw, 4rem);
+    background-color: var(--color-purple);
+    border-radius: 50%;
+    position: absolute;
+    left: 2rem;
+}
+.navbar img{
+    height: 2rem;
+    width: 7rem;
+}
+.profile{
+    height: 90dvh;
+    width: 50dvh;
+    background-color: var(--color-purple);
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(-100%);
+    z-index: 2;
+}
+.profile img{
+    height: 3rem;
+    width: 3rem;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.home-page-profile, .in-app-purchases{
+    height: 6rem;
+    margin-bottom: 2rem;
+}
+main{
+    height: fit-content;
+    width: 100%;
+    background-color: rgba(246 , 82, 117, .3);
+}
+.search-bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    padding-block: 1rem;
+    position: relative;
+}
+.search-bar span{
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: .3rem;
+    top: 1.4rem;
+}
+.search-bar input{
+    font-size: .8rem;
+    width: 17rem;
+    height: 2rem;
+    border: .0125rem solid gray;
+    border-radius: .5rem;
+    padding-left: 1.7rem;
+    box-shadow: 0rem .2rem .1rem gray;
+}
+.top-picks div.card-list, .popular div.card-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-picks header, .popular header{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-block: 1rem;
+    padding-left: 2rem;
+}
+.top-picks a, .popular a{
+    text-decoration: none;
+    color: var(--color-purple);
+}
+.top-picks p, .popular p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-block: .5rem;
+}
+.top-picks img, .popular img{
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
+}
+.image{
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0rem .3rem .2rem gray;
+}
+.card-list div.card{
+    margin-block: 1rem;
+}
+
+@media only screen and (width > 768px){
+    .search-bar input{
+        width: 25rem;
+    }
+    .top-picks div.card-list, .popular div.card-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .top-picks a, .popular a{
+        align-self: center;
+        justify-self: center;
+    }
+    .card{
+        align-self: center;
+        justify-self: center;
+    }
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+    #mango, #apple{
+        height: 11rem;
+        width: 11rem;
+    }
+    main{
+        padding-inline: 1.5rem;
+    }
+}

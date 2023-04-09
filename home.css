@@ -210,7 +210,7 @@ form header{
     font-size: .7rem;
     text-align: center;
 }
-.login-form a.login-link, .signup-form a.new-account-link{
+.login-form button.login-link, .signup-form button.new-account-link{
     text-decoration: none;
     text-align: center;
     padding-inline: .7rem;
@@ -248,18 +248,20 @@ form header{
     background-color: var(--color-yellow);
     color: black;
 }
+.sign-up-btn:hover{
+    text-decoration: none;
+    color: black;
+}
 .signup-form{
     width: fit-content;
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.signup-form a.new-account-link{
+.signup-form button.new-account-link{
     display: flex;
-    width: 8rem;
-    font-size: 1rem;
-    text-align: center;
-}
-.signup-form input{
-    margin-left: 1.5rem;
+    width: 10rem;
 }
 @media only screen and (width > 768px) {
     #dialog-form{

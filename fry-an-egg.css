@@ -1,0 +1,137 @@
+@import url(root.css);
+
+.navbar{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    box-shadow: 0rem .3rem .2rem gray;
+}
+.circle{
+    height: clamp(1.3rem, 3vw, 4rem);
+    width: clamp(1.3rem, 3vw, 4rem);
+    background-color: var(--color-purple);
+    border-radius: 50%;
+    position: absolute;
+    left: 2rem;
+}
+.navbar img{
+    height: 2rem;
+    width: 7rem;
+}
+.profile{
+    height: 90dvh;
+    width: 50dvh;
+    background-color: var(--color-purple);
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(-100%);
+    z-index: 2;
+}
+.profile img{
+    height: 3rem;
+    width: 3rem;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.home-page-profile, .in-app-purchases{
+    height: 6rem;
+    margin-bottom: 2rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding-block: 1rem;
+}
+main header{
+    margin-block: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.recipe-image{
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0rem .3rem .2rem gray;
+}
+.recipe-image img{
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right a{
+    text-decoration: none;
+    color: var(--color-purple);
+}
+.modes{
+    width: fit-content;
+    height: fit-content;
+    margin-block: 1rem;
+}
+.mode{
+    height: 3rem;
+    width: 17rem;
+    margin-block: .5rem;
+    border: .0125rem solid gray;
+    border-radius: 1rem;
+    background-color: rgba(249, 224, 29, .29);
+    box-shadow: 0rem .3rem .2rem gray;
+    display: flex;
+    align-items: center;
+}
+.mode p{
+    margin-left: 1rem;
+}
+#mode2{
+    background-color: rgba(192, 39, 185, .29);
+}
+#mode3{
+    background-color: rgba(248, 82, 114, .29);
+}
+.recipe-info{
+    margin-block: 1rem;
+    height: 8rem;
+    width: 20rem;
+    border: .0125rem solid gray;
+    border-radius: 2.5rem;
+    box-shadow: 0rem .3rem .2rem gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+@media only screen and (width > 768px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main header{
+        grid-column-start: 2;
+    }
+    .recipe-image{
+        width: fit-content;
+        align-self: center;
+        justify-self: center;
+    }
+    .right{
+        justify-self: flex-start;
+    }
+}
