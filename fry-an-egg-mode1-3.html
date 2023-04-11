@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fry-an-egg-mode1-1.css">
+    <link rel="icon" type="image/x-icon" href="assets/Top-Logo-Pan.png">
+    <title>Kook-It Fried Egg - Mode 1</title>
+    <style>
+        main{
+            background-image: none !important;
+            background-color: rgba(192, 39, 185, .3) !important;
+            height: 100dvh;
+        }
+        #step2{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #step2 p{
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .pan{
+            height: 4.5rem;
+            width: 17rem;
+            margin-left: 4rem;
+        }
+        .egg{
+            height: 4.5rem;
+            width: 4.5rem;
+            margin-block: 1rem;
+            cursor: pointer;
+        }
+        @media only screen and (width > 768px){
+            .info{
+            transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button class="next"><img src="assets/next.svg" alt=""></button>
+        <button class="info-btn">Information</button>
+        <div id="step2">
+            <img class="pan" src="assets/Pan-with-oil.png" alt="">
+            <img class="egg" src="assets/Eggs.png" alt="">
+            <p>Crack an egg into the pan.</p> 
+        </div>
+        <div class="info">
+            <h3>Information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Repellat accusantium laudantium aliquam rem, explicabo eaque doloremque! 
+                Vel fuga error commodi magni officiis quis corporis nesciunt qui? Quibusdam 
+                sed aspernatur voluptatem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est nostrum ex 
+                eaque consequatur soluta amet hic harum doloremque quasi animi cupiditate at 
+                voluptatem, deserunt voluptates porro fuga quidem repellendus!</p>
+        </div>
+    </main>
+</body>
+<script src="info.js"></script>
+<script>
+    const eggImage = document.querySelector('.egg');
+    const nextButton = document.querySelector('.next');
+    let count = 0;
+
+    eggImage.addEventListener('click', () => {
+        count++;
+        console.log(count);
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (count > 0) {
+            window.location.href = 'fry-an-egg-mode1-4.html';
+        }
+    });
+</script>
+</html>

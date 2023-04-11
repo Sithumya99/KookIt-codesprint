@@ -1,0 +1,100 @@
+@import url(root.css);
+
+main{
+    height: 100dvh;
+    background: url(assets/bg-img-horizontal.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next{
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.info-btn{
+    height: 2rem;
+    width: 8rem;
+    outline: none;
+    border-radius: .5rem;
+    background-color: var(--color-yellow);
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+}
+.info{
+    width: 50dvh;
+    height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    padding-inline: .5rem;
+    background-color: white;
+    border-radius: 1rem;
+    top: 3rem;
+    left: 0;
+    transform: translateX(-100%);
+}
+.info h3{
+    font-weight: 800;
+    margin-block: .5rem;
+}
+#ingredients{
+    background-color: var(--color-purple);
+    width: 100%;
+    height: fit-content;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: .5rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
+    width: 10rem;
+    height: 10rem;
+}
+.card p{
+    margin-block: .5rem;
+}
+.image{
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, .19);
+    box-shadow: 0rem .3rem .2rem gray;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#step1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (width > 768px){
+    #ingredients{
+        height: 80dvh;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
